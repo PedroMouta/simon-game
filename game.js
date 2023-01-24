@@ -4,7 +4,10 @@ $("body").on("keypress", function () {
 });
 
 $(".button-begin").on("click", function() {
+    array = [];
+    level = 1;
     nextSequence();
+
 });
 
 // ADD A NEW BUTTON TO THE SEQUENCE
@@ -129,47 +132,3 @@ $(".btn").on("click", function () {
             break;
     }
 });
-
-
-/*
-function previousSequence(i) {
-
-    for (i = 0; i < level; i++) {
-
-            switch (array[i]) {
-
-                case 1:
-                    new Audio('sounds/green.mp3').play();
-                    $(".green").addClass("pressed");
-                    setTimeout(function () {
-                        $(".green").removeClass("pressed");
-                    }, 100)
-                    break;
-
-                case 2:
-                    new Audio('sounds/red.mp3').play();
-                    $(".red").addClass("pressed");
-                    setTimeout(function () {
-                        $(".red").removeClass("pressed");
-                    }, 100)
-                    break;
-
-                case 3:
-                    new Audio('sounds/yellow.mp3').play();
-                    $(".yellow").addClass("pressed");
-                    setTimeout(function () {
-                        $(".yellow").removeClass("pressed");
-                    }, 100)
-                    break;
-
-                case 4:
-                    new Audio('sounds/blue.mp3').play();
-                    $(".blue").addClass("pressed");
-                    setTimeout(function () {
-                        $(".blue").removeClass("pressed");
-                    }, 100)
-                    break;
-            }
-    }
-}
-*/
